@@ -7,7 +7,7 @@
 #define THERMISTOR_CONFIGURATION PULL_UP // Using Pukk-up resistor or you can use PULL_DOWN
 
 //mlab_thermistor(unsigned char thermistor_pin,char configuration,float pair_resistance,float thermistor_r25,float thermistor_beta)
-mlab_thermistor thermistor(THERMISTOR_PIN,PULL_UP,PAIR_RESISTANCE,THERMISTER_R25,THERMISTER_BETA);
+Mlab_thermistor thermistor(THERMISTOR_PIN,PULL_UP,PAIR_RESISTANCE,THERMISTER_R25,THERMISTER_BETA);
 void setup() {
   Serial.begin(115200);
 }
