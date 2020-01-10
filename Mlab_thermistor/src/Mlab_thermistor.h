@@ -15,7 +15,7 @@
 #define PULL_DOWN 2
 #define ZERO_CELSIUS_KELVIN 273.15
 
-class mlab_thermistor{
+class Mlab_thermistor{
 
 private:
 	unsigned char _thermistor_pin;
@@ -26,7 +26,7 @@ private:
 	float  current_reading;
 	float  adc2kelvin (float adc_val);
 public:
-	mlab_thermistor(unsigned char thermistor_pin,char configuration,float pair_resistance,float thermistor_r25,float thermistor_beta);
+	Mlab_thermistor(unsigned char thermistor_pin,char configuration,float pair_resistance,float thermistor_r25,float thermistor_beta);
     float  getResistance(float raw_sensor_val);
 	float  readCelsius(void);
 	float  readFahrenheit (void);
